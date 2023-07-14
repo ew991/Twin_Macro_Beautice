@@ -4,6 +4,7 @@ import Footer from "../component/footer";
 import ProfessionT from "../component/ProfessionTeam";
 import AssistanceT from "./AssistanceTeam";
 import SliderT from "./SliderTeam";
+import Testimonials from "./Testimonials";
 
 
 
@@ -15,6 +16,7 @@ const Team = () => {
             <ProfessionT />
             <AssistanceT />
             <SliderT />
+            <Testimonials />
             <Footer />
         </  >
     );

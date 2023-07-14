@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../component/navbar";
 import Footer from "../component/footer";
 import CardConten from "../component/Cardconten";
@@ -7,10 +7,19 @@ import Animation2 from '../asset/Animation22.png';
 import Animation3 from '../asset/Animation33.png';
 import OurService from "./OurService";
 import MSlider from "./Slider";
+import Accordion from "../component/Accordion";
+
+import React, { useState } from 'react';
+import Collapse from "../component/Accordion";
 
 
 
 const Service = () => {
+    const [activeSection, setActiveSection] = useState(null);
+
+    const handleAccordionClick = (sectionId) => {
+        setActiveSection(sectionId === activeSection ? null : sectionId);
+    };
     return (
         <>
             <Navbar />
@@ -46,6 +55,7 @@ const Service = () => {
                 h5text='>>'
                 Cardbutton='Learn More' />
             <MSlider />
+            <Collapse />
             <Footer />
         </  >
     );

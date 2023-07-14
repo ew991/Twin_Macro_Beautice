@@ -10,7 +10,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 130px;
   padding: 0 150px;
 
   @media (max-width: 768px) {

@@ -9,6 +9,7 @@ import anh6 from '../asset/unsplash_HEde-a_T4E8.png'
 import anh7 from '../asset/unsplash_9Wa1HgE1XlA.png'
 import anh8 from '../asset/unsplash_PqyzuzFiQfY.png'
 import anh9 from '../asset/unsplash_4SUyx4KQ5Ik.png'
+import { styled } from "styled-components";
 
 const Container = tw.div`
 p-[0 150px]
@@ -20,7 +21,7 @@ const Box2 = tw.div`
 grid grid-cols-3 gap-[36px] mt-[75px]
 `;
 const Box2_1 = tw.div`
-flex flex-row gap-[84px]
+flex flex-col  lg:flex-row gap-[84px]
 `;
 const Text1 = tw.h5`
 `;
@@ -37,7 +38,15 @@ text-start max-w-[660px] mt-[66px]
 const Img = tw.img`
 
 `;
-
+const TextBl = styled.span`
+color: #091156;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.6px;
+`;
 const OurGallery = () => {
     return (
         <>
@@ -61,7 +70,7 @@ const OurGallery = () => {
                     <Img src={anh8} />
                     <Img src={anh9} />
                 </Box2>
-                <Text3p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim, our teams.</Text3p>
+                <Text3p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim, <TextBl>our teams.</TextBl></Text3p>
 
             </Container>
 

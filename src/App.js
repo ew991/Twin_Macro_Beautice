@@ -10,7 +10,7 @@ import Home from './component/Home_';
 
 import HomePlus from './home2/HomePlus';
 
-import Group from './asset/Group.png'
+
 
 import {
   BrowserRouter,

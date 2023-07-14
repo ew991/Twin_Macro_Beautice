@@ -17,8 +17,24 @@ const About = () => {
             <Aboutus />
             <ProfessionT />
             <Slide />
-            <CardConten CheckSide={true} CheckBtn={false} Cardimg={Group} h1text='About Us' h2text='We are the best beauty clinic' h3text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.' Cardbutton='Learn More' />
-            <CardConten CheckSide={false} CheckBtn={false} Cardimg={Group2} h1text='About Us' h2text='We are the best beauty clinic' h3text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.' Cardbutton='Learn More' />
+            <CardConten
+                CheckSide={true}
+                CheckBtn={false}
+                Cardimg={Group}
+                h1text='Our Vision'
+                h2text='We are the best beauty clinic'
+
+                h3text={<>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.<br /><br /> Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.</>}
+                Cardbutton='Learn More' />
+            <CardConten
+                CheckSide={false}
+                CheckBtn={false}
+                Cardimg={Group2}
+                h1text='Our Mission'
+                h2text='Special & premium service
+                to any clients'
+                h3text={<>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero.<br /><br /> Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.</>}
+                Cardbutton='Learn More' />
             <Client />
             <Footer />
         </  >

@@ -14,8 +14,10 @@ const Buttn = styled.button(({ HasBtn }) => [
 ]);
 
 const Text1 = tw.h5`
+[letter-spacing:0]
 `;
 const Text2 = tw.h2`
+[letter-spacing:0]
 `;
 const Text3 = tw.p`
 mt-[10px]

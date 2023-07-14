@@ -11,7 +11,7 @@ const Box = styled.div(({ imgFist }) => [
     imgFist
         ? tw`md:flex md:flex-col lg:flex lg:flex-row `
         : tw`lg:flex lg:flex-col`,
-    tw`gap-[20px] `
+    tw`gap-[20px]  `
 ]);
 const Buttn = styled.button(({ HasBtn }) => [
     HasBtn ? tw`block` : tw` hidden`,
@@ -37,7 +37,7 @@ const Boxmini = tw.div`
  flex gap-[10px]
 `;
 
-const Cardinfor = ({ CheckSideT, CheckSide, CheckBtn, h1text, h2text, h3text, h4text, h5text, Cardbutton, Cardimg1, Cardimg2, Cardimg3 }) => {
+const Cardinfor = ({ CheckSideT, CheckSide, CheckBtn, h1text, h2text, h3text, h4text, h5text, Cardbutton, Cardimg1, Cardimg2, Cardimg3, h1textBlock2, h1textBlock3 }) => {
 
     return (
         <>
@@ -64,7 +64,7 @@ const Cardinfor = ({ CheckSideT, CheckSide, CheckBtn, h1text, h2text, h3text, h4
                 <Box imgFist={CheckSide}   >
                     <img src={Cardimg2} />
                     <div>
-                        <Text1  >{h1text}</Text1>
+                        <Text1  >{h1textBlock2}</Text1>
                         <Text2  >{h2text}</Text2>
                         <Text3  >{h3text}</Text3>
                         <Boxmini>
@@ -83,7 +83,7 @@ const Cardinfor = ({ CheckSideT, CheckSide, CheckBtn, h1text, h2text, h3text, h4
                 <Box imgFist={CheckSide}   >
                     <img src={Cardimg3} />
                     <div>
-                        <Text1  >{h1text}</Text1>
+                        <Text1  >{h1textBlock3}</Text1>
                         <Text2  >{h2text}</Text2>
                         <Text3  >{h3text}</Text3>
                         <Boxmini>

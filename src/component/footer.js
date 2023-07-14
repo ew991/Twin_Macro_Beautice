@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import footerbg from '../asset/FooterBG.png';
-import ftBgbottom from '../asset/BottomBG.png'
-import Footerlogo from '../asset/Footer Logo.png'
+import ftBgbottom from '../asset/BottomBG.png';
+import Footerlogo from '../asset/Footer Logo.png';
+import ArrowImg from '../asset/arrow-up.png'
+import tw from 'twin.macro';
 
 const FooterContainer = styled.footer`
   position: relative;
@@ -12,16 +14,35 @@ const FooterContainer = styled.footer`
 
   flex-shrink: 0;
 `;
+const BtnToTop = styled.button`
+  @media (max-width: 1024px) {
+    display: none;
+  }
+width: 36px;
+height: 36px;
+border-radius: 5px;
+position: absolute;
+bottom: 170px;
+right: 65px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+        `;
+const Imgbtn = tw.img`
+flex
+`;
 const Img = styled.img`
   position: absolute;
   bottom: 0;
   z-index: -10;
+
 `;
 
 const Footerblock1 = styled.div`
   display: flex;
   text-align: center;
   @media (min-width: 1340px) {
+    margin-top: 140px;
     gap: 150px;
   }
   @media (max-width: 1339px) {
@@ -60,6 +81,7 @@ const Box = styled.div`
   
   background-image: url(${footerbg});
   height: 703.342px;
+  
   }
   @media (max-width: 1223px) {
   background-color: #172176;
@@ -82,6 +104,7 @@ const Box = styled.div`
   flex-direction: column;
   justify-content: center;
   color: #D7DBFF;
+  
   `;
 const Tagp = styled.p`
   color: #D7DBFF;
@@ -145,6 +168,14 @@ const Box4 = styled.div`
 const Box5 = styled.div` 
 
         `;
+
+const hanDleOnClickBtn = () => {
+  console.log('ckckk')
+  document.body.scrollIntoView({
+    behavior: "smooth",
+  });
+};
+
 const Footer = () => {
   return (
     <>
@@ -205,6 +236,7 @@ const Footer = () => {
         </Box>
 
         <Img src={ftBgbottom} />
+        <BtnToTop onClick={hanDleOnClickBtn}><Imgbtn src={ArrowImg} /></BtnToTop>
       </FooterContainer>
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
-import AboutImg from '../asset/unsplash_DE6rYp1nAho.png'
+import AboutImg from '../asset/Group 7.png'
 const Box = tw.div`
 p-[0 150px] mt-[125px]
 `;
@@ -8,7 +8,7 @@ const H = tw.h5``;
 const A = tw.h2` lg:max-w-[733px]`;
 const P = tw.p` lg:max-w-[680px]`;
 const Img = tw.img`
-
+cursor-pointer
 `;
 const Box2 = tw.div`
 p-[0 80px]

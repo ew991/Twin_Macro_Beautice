@@ -12,14 +12,20 @@ text-center mt-[110px]
 const Text1 = tw.h5``;
 const Text2 = tw.h2``;
 const Text3 = tw.p``;
-
+const Textp = tw.span`
+italic
+text-[#8B8B8B] text-[14px] font-thin [letter-spacing:0]
+`;
+const TextBlue = tw.span`
+text-[#091156]
+`;
 const AssistanceT = () => {
     return (
         <>
             <Title>
-                <Text1>The Blog</Text1>
-                <Text2>Our latest news</Text2>
-                <Text3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text3>
+                <Text1>Assistance Team</Text1>
+                <Text2>Meet the pro assistance</Text2>
+                <Text3>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</Text3>
 
             </Title>
             <Cardinfor
@@ -29,10 +35,12 @@ const AssistanceT = () => {
                 Cardimg1={CardImg}
                 Cardimg2={CardImg2}
                 Cardimg3={CardImg3}
-                h1text='About Us'
-                h2text='We are the best beauty clinic'
-                h3text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.'
-                Cardbutton='Learn More' />
+                h1text={<><TextBlue>Lina Gustav /</TextBlue><Textp>Pharmacist</Textp> </>}
+                h1textBlock2={<><TextBlue>Adam White /</TextBlue><Textp>Pharmacist</Textp> </>}
+                h1textBlock3={<><TextBlue>Jane Doe /</TextBlue><Textp>Pharmacist</Textp> </>}
+
+                h3text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id magnis at placerat pulvinar euismod neque.'
+            />
         </  >
     );
 };
