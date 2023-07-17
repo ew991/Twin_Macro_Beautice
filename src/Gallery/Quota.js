@@ -23,7 +23,7 @@ const Text1 = tw.h5`
 `;
 const Text2 = tw.h2`
 [letter-spacing: 0.1px] 
-min-w-[642px]
+lg:min-w-[642px]
 text-[36px]
 `;
 const Text3 = tw.p`

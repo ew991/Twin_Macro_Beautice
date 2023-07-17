@@ -51,6 +51,16 @@ padding: 24px;
   border: 1px solid #D9DDFE;
   background: #FFF;
   flex: 1;
+  &::placeholder{
+
+color: #C5C5C5;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.6px;
+}
 `;
 
 const FormTextarea = styled.textarea`
@@ -66,6 +76,16 @@ padding: 24px;
   max-height: 250px;
   flex: 1;
   resize: none;
+  &::placeholder{
+
+color: #C5C5C5;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.6px;
+}
 `;
 const ContactUs = () => {
   return (

@@ -12,7 +12,9 @@ text-center mt-[110px]
 const Text1 = tw.h5``;
 const Text2 = tw.h2``;
 const Text3 = tw.p``;
-
+const TextBlue = tw.h6`
+text-[18px] [letter-spacing:0.1px]
+`;
 const Theblog = () => {
     return (
         <>
@@ -29,9 +31,11 @@ const Theblog = () => {
                 Cardimg1={CardImg}
                 Cardimg2={CardImg2}
                 Cardimg3={CardImg3}
-                h1text='About Us'
-                h2text='We are the best beauty clinic'
-                h3text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit, quam suscipit purus donec amet. Egestas volutpat facilisi eu libero. Nunc, ipsum ornare mauris sit quam quis enim. Varius tellus in suspendisse placerat.'
+                h2textblock={<TextBlue>How much does a consultation cost at our clinic?</TextBlue>}
+                h2textblock2={<TextBlue>Watch out! don't choose the wrong beauty product</TextBlue>}
+                h2textblock3={<TextBlue>About skin care you need to know</TextBlue>}
+                h3text={'A wonderful serenity has taken possession of my entire soul, like these sweet mornings ...'}
+                h5text={'Learn more >>'}
                 Cardbutton='Learn More' />
         </  >
     );

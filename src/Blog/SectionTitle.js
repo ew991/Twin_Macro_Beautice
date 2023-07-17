@@ -12,8 +12,7 @@ const Container = styled.div`
   background-image: url(${BgSlider});
 
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
-    align-items: stretch;
+    
     gap: 50px;
   }
 `;
@@ -22,8 +21,6 @@ const LeftBlock = styled.div`
   width: 100%;
   display: flex;
   text-align: center;
-
-
   justify-content: space-between;
   gap: 15px;
   @media (min-width: 769px) {
@@ -34,7 +31,7 @@ const LeftBlock = styled.div`
   @media (max-width: 768px) {
     margin-left: 0px;
 
-    justify-content: center;
+
     align-items: center;
     text-align: center;
   }
@@ -62,20 +59,20 @@ letter-spacing: 1.6px;
 
 
 const SectionTitle = () => {
-    return (
-        <>
-            <Container>
-                <LeftBlock>
-                    <Text>Blog</Text>
-                    <Text2>Home	• Blog</Text2>
+  return (
+    <>
+      <Container>
+        <LeftBlock>
+          <Text>Blog</Text>
+          <Text2>Home	• Blog</Text2>
 
-                </LeftBlock>
+        </LeftBlock>
 
 
 
-            </Container>
-        </>
-    );
+      </Container>
+    </>
+  );
 };
 
 export default SectionTitle;

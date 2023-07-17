@@ -10,9 +10,12 @@ import Slide from "./Slide";
 import Client from "./Client";
 
 
+
+
 const About = () => {
     return (
         <>
+
             <Navbar />
             <Aboutus />
             <ProfessionT />
@@ -37,6 +40,8 @@ const About = () => {
                 Cardbutton='Learn More' />
             <Client />
             <Footer />
+
+
         </  >
     );
 };

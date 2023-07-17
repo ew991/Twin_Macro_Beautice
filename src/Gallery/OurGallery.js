@@ -18,7 +18,7 @@ const Box = tw.div`
 flex flex-col  mt-[125px]
 `;
 const Box2 = tw.div`
-grid grid-cols-3 gap-[36px] mt-[75px]
+grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[36px] mt-[75px] overflow-auto max-h-[750px]
 `;
 const Box2_1 = tw.div`
 flex flex-col  lg:flex-row gap-[84px]
@@ -27,7 +27,7 @@ const Text1 = tw.h5`
 `;
 const Text2 = tw.h2`
 [letter-spacing: 0.1px] 
-min-w-[615px]
+lg:min-w-[615px]
 text-[36px]
 `;
 const Text3 = tw.p`

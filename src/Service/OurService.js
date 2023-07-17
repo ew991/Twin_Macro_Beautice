@@ -8,7 +8,7 @@ const Box = tw.div`
 flex flex-col text-center mt-[125px]
 `;
 const Box2 = tw.div`
-flex flex-col gap-[68px] items-center justify-center mt-[70px]
+flex flex-col gap-[68px] items-center justify-center mt-[70px] overflow-auto
 `;
 const Box2_1 = tw.div`
 flex flex-row gap-[84px]

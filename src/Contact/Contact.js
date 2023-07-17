@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../component/navbar";
 import Footer from "../component/footer";
-import ContactUs from "../component/ContactUs";
 import Map from '../asset/map.png';
 import tw from "twin.macro";
 import GetInTouch from "./GetInTouch";
+import ContactUsF from "./ContactForm";
 
 
 const Img = tw.img`
@@ -15,7 +15,7 @@ const Contact = () => {
     return (
         <>
             <Navbar />
-            <ContactUs />
+            <ContactUsF />
             <Img src={Map} />
             <GetInTouch />
             <Footer />

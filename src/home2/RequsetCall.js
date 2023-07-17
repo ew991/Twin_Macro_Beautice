@@ -40,10 +40,10 @@ letter-spacing: 1.6px;
 `;
 
 
-const Search = styled.div`
-display: flex;
-width: 658px;
-height: 73px;
+const Search = tw.div`
+[display: flex;]
+lg:w-[658px]
+lg:h-[73px]
 `;
 const Input = styled.input`
 border-radius: 25px 0px 0px 25px;

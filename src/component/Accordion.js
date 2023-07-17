@@ -37,7 +37,7 @@ const Wrap = tw.div`
 
 mx-[150px]`;
 const WrapLine = tw.div`
-flex justify-between min-w-[972px] mt-[30px]`;
+flex justify-between lg:min-w-[972px] mt-[30px]`;
 const ItemTitle = tw.h6`
 text-start
 `;
