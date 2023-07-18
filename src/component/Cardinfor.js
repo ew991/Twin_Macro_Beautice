@@ -5,7 +5,7 @@ const Container = styled.div(({ Nang }) => [
     Nang
         ? tw`md:flex md:flex-col lg:flex lg:flex-row `
         : tw`lg:flex lg:flex-col`,
-    tw`gap-[80px] p-[0 150px] mt-[120px] `
+    tw`gap-[80px] p-[0 45px] xl:p-[0 150px] mt-[120px] `
 ]);
 const Box = styled.div(({ imgFist }) => [
     imgFist
@@ -24,6 +24,7 @@ const Text1 = tw.h5`
 const Text2 = tw.h2`
 `;
 const Text3 = tw.p`
+overflow-auto max-h-[80px]
 mt-[10px]
 `;
 const Text4 = tw.h6`

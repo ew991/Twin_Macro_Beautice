@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "../component/navbar";
 import Footer from "../component/footer";
-import ProfessionT from "../component/ProfessionTeam";
-import AssistanceT from "./AssistanceTeam";
 import SliderT from "./SliderTeam";
 import Testimonials from "./Testimonials";
+import GroupT from "./GroupT";
 
 
 
@@ -13,8 +12,7 @@ const Team = () => {
     return (
         <>
             <Navbar />
-            <ProfessionT />
-            <AssistanceT />
+            <GroupT />
             <SliderT />
             <Testimonials />
             <Footer />

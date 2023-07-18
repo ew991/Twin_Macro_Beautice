@@ -17,7 +17,7 @@ const Testimonials = () => {
     flex flex-col items-center justify-center gap-[33px]
     `;
     const P = tw.p`
-text-[14px] max-w-[544px] text-center
+text-[14px] max-w-[544px] text-center overflow-auto max-h-[120px]
 `;
     return (
         <>

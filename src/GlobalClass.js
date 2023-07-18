@@ -53,12 +53,12 @@ export const GlobalClass = css`
     }
     h4{
       color: #ABB4FF;
-text-align: center;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 125%; /* 20px */
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%; /* 20px */
     }
     button{
         height: 58px;
@@ -72,7 +72,7 @@ line-height: 125%; /* 20px */
         color: #FFFFFF;
         cursor: pointer;
         &:hover{
-            background-color: #FFFFFF;
+            background-color: #EEF0FF;
             color: #FF64AE;
            
         }

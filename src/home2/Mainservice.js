@@ -87,7 +87,7 @@ const MainService = () => {
                     <Text3>Learn more <Image src={icon} /> </Text3>
 
                 </Block>
-                <Block>
+                <Block style={{ border: '1px solid #9BA2E0' }}>
                     <Bloc>
 
                         <Image src={fame2} alt="Image" />

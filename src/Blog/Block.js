@@ -7,9 +7,7 @@ import CardImgr1 from '../asset/unsplash_xayCTz6N2nM8.png';
 import CardImgr2 from '../asset/unsplash_DiJKOYIiNmQ.png';
 import CardImgr3 from '../asset/unsplash_yfmjALh1S6s.png';
 import Socialimg1 from '../asset/Group 8.svg';
-import Socialimg2 from '../asset/twitter.png';
-import Socialimg3 from '../asset/instagram.png';
-import Socialimg4 from '../asset/Linkedin.png';
+import IconTg from '../asset/VectorTamG.png'
 import search from '../asset/search.png'
 import folder from '../asset/Vector0.png'
 import { styled } from "styled-components";
@@ -17,18 +15,20 @@ import tw from "twin.macro";
 
 
 const Block = tw.div`
-flex p-[0 150px] 
+p-[0 20px]
+flex xl:p-[0 150px] 
 gap-[60px]
 flex-col-reverse
 md:flex-row
 lg:flex-row
 `;
 const BlockLeft = tw.div`
- flex flex-col gap-[133px] lg:w-[730px] lg:mt-[108px]
+ flex flex-col gap-[133px] lg:w-[730px] lg:mt-[108px] 
 
 `;
 const BlockRight = tw.div`
-w-[350px]
+mt-[30px]
+lg:w-[350px]
 
 lg:mt-[108px]
 flex flex-col gap-[83px]
@@ -40,13 +40,19 @@ const Text1 = tw.h5`
 flex gap-[15px] 
 `;
 const Text2 = tw.h2`
+text-[18px] lg:text-[36px] [letter-spacing:0.1px]
 `;
 const Text3 = tw.p`
-max-w-[592px]
+text-[12px] lg:text-[16px]
+max-w-[592px] overflow-auto md:max-h-[125px] max-h-[80px]
 `;
 const Button = tw.button`
+flex items-center justify-center gap-[8px]
+w-[200px] h-[30px]
+lg:w-[226px] lg:h-[58px]
 `;
 const CoverConten = tw.div`
+p-[20px] lg:p-[0px]
 flex  justify-center items-center
 [border-radius: 0px 0px 50px 50px;]
 [background: #FFF;]
@@ -59,7 +65,7 @@ max-w-[620px] flex flex-col gap-[20px]
 
 `;
 const Cover = tw.div`
-flex flex-col 
+flex flex-col min-w-[400px] lg:w-full  
 `;
 const BlockR = tw.div`
 pl-[49px]
@@ -78,10 +84,10 @@ pb-[60px]
 [background: #FFF;]
 [box-shadow: -2px 4px 31px 9px #F2F4FF;]
 `;
-const Search = styled.div`
-display: flex;
-width: 350px;
-height: 65px;
+const Search = tw.div`
+flex w-full 
+xl:w-[350px]
+h-[65px]
 `;
 const Input = styled.input`
 border-radius: 50px 0px 0px 50px;
@@ -174,7 +180,7 @@ const BlockBlog = () => {
                                     A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the…
                                 </Text3>
                                 <Button>
-                                    Read More
+                                    Read More<Img src={IconTg} />
                                 </Button>
                             </Conten>
 
@@ -194,7 +200,7 @@ const BlockBlog = () => {
                                     A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the…
                                 </Text3>
                                 <Button>
-                                    Read More
+                                    Read More<Img src={IconTg} />
                                 </Button>
                             </Conten>
 
@@ -214,7 +220,7 @@ const BlockBlog = () => {
                                     A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the…
                                 </Text3>
                                 <Button>
-                                    Read More
+                                    Read More<Img src={IconTg} />
                                 </Button>
                             </Conten>
 

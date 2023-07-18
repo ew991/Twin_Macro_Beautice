@@ -1,21 +1,17 @@
 import React from "react";
-import Navbar from "./navbar";
-import MainSlider from "./MainSlider";
-import ProfessionT from "./ProfessionTeam";
-import CoreService from "./CoreService";
-import AboutUs from "./AboutUs";
-import ContactUs from "./ContactUs";
+
 import Footer from "./footer";
+import Group from "./Group";
+import Groups from "./Groups";
+import Group3 from "./Group3";
 
 const Home = () => {
     return (
         <>
-            <Navbar />
-            <MainSlider />
-            <CoreService />
-            <AboutUs />
-            <ProfessionT />
-            <ContactUs />
+            <Group />
+            <Groups />
+            <Group3 />
+
             <Footer />
         </  >
     );

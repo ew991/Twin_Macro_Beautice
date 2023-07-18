@@ -81,8 +81,9 @@ const RightBlock = styled.button`
             background-color: inherit;        
         }
   @media (max-width: 768px) {
-    justify-content: center;
-    order: -1;
+    /* justify-content: center;
+    order: -1; */
+    display:none;
   }
 `;
 
@@ -90,15 +91,7 @@ const Image = styled.img`
   width: 127px;
   /* height: 127px; */
 `;
-const SildeBtn = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 130px;
-@media (max-width: 768px) {
-    display: none;
-  }
-`;
+
 const MainSlider = () => {
   return (
     <>

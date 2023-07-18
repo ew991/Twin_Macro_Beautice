@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // import Container from '@mui/material/Container';
 import Contactimg from '../asset/Contact Animations.png';
+import Bgctfrom from '../asset/Background BubbleContac.png';
 import tw from 'twin.macro';
 
 const Container = styled.div`
@@ -91,40 +92,49 @@ text-[36px]
 `;
 const Text3 = tw.p`
 `;
+const GroupCtf = tw.div`
+relative
+`;
+const Img = tw.img`
+absolute z-[-10] top-[70px]
+`;
 const ContactUsF = () => {
     return (
         <>
-            <Box>
-                <Text1>Contact Us</Text1>
-                <Box2_1>
-                    <Text2>Contact service for our customers</Text2>
-                    <Text3>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</Text3>
-                </Box2_1>
+            <GroupCtf>
+                <Img src={Bgctfrom} />
+                <Box>
+                    <Text1>Contact Us</Text1>
+                    <Box2_1>
+                        <Text2>Contact service for our customers</Text2>
+                        <Text3>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</Text3>
+                    </Box2_1>
 
-            </Box>
-            <Container>
-                <img src={Contactimg} />
+                </Box>
+                <Container>
+                    <img src={Contactimg} />
 
-                <FormContainer>
+                    <FormContainer>
 
 
-                    <FormRow>
-                        <FormInput type="text" placeholder="First name" />
-                        <FormInput type="text" placeholder="Last name" />
-                    </FormRow>
-                    <FormRow>
-                        <FormInput type="text" placeholder="Email address" />
-                    </FormRow>
-                    <FormRow>
-                        <FormInput type="text" placeholder="Subject message" />
-                    </FormRow>
-                    <FormRow>
-                        <FormTextarea placeholder="Your inquiry here" />
-                    </FormRow>
-                    <button className='btn'>Send Message</button>
+                        <FormRow>
+                            <FormInput type="text" placeholder="First name" />
+                            <FormInput type="text" placeholder="Last name" />
+                        </FormRow>
+                        <FormRow>
+                            <FormInput type="text" placeholder="Email address" />
+                        </FormRow>
+                        <FormRow>
+                            <FormInput type="text" placeholder="Subject message" />
+                        </FormRow>
+                        <FormRow>
+                            <FormTextarea placeholder="Your inquiry here" />
+                        </FormRow>
+                        <button className='btn'>Send Message</button>
 
-                </FormContainer>
-            </Container>
+                    </FormContainer>
+                </Container>
+            </GroupCtf>
         </>
 
 

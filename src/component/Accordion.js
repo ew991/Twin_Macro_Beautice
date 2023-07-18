@@ -43,7 +43,8 @@ text-start
 `;
 const ArrowDown = tw.img`ml-auto`;
 const Content = tw.div`
-[border-radius: 0px 0px 20px 20px; ] border-t-4 w-[972px] h-[216px] p-[0 70px] flex items-center justify-center 
+[border-radius: 0px 0px 20px 20px; ] border-t-4 lg:w-[972px] lg:h-[216px] lg:p-[0 70px] flex items-center justify-center overflow-auto
+max-h-[216px] p-[0 30px]
 bg-[#F6F7FF]
 `;
 const P = tw.p`

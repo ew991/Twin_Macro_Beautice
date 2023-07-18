@@ -16,7 +16,7 @@ const FooterContainer = styled.footer`
 `;
 const BtnToTop = styled.button`
   @media (max-width: 1024px) {
-    display: none;
+    /* display: none; */
   }
 width: 36px;
 height: 36px;
@@ -119,10 +119,14 @@ const Box1 = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
-  min-width: 460px;
+ 
   @media (max-width: 1024px) {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
+  }
+  @media (min-width: 1025px) {
+
+    min-width: 460px;
   }
  `;
 const Box2 = styled.ul` 
@@ -157,11 +161,7 @@ const Box3 = styled.ul`
     content: '>';
   }
    `;
-// const Box3 = styled.ul` 
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//     `;
+
 const Box4 = styled.div` 
 
       `;

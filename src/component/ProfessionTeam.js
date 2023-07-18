@@ -4,6 +4,7 @@ import Animation1 from '../asset/unsplash_pTrhfmj2jDA.png'
 import Animation2 from '../asset/unsplash_FVh_yqLR9eA.png'
 import Animation3 from '../asset/unsplash_mEZ3PoFGs_k.png'
 import TwFbInt from '../asset/Social Media.svg'
+import tw from 'twin.macro';
 
 const Container = styled.div`
   display: flex;
@@ -11,10 +12,12 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 0 150px;
+  margin-top: 140px;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: stretch;
+    margin-top: 85px;
   }
 `;
 
@@ -36,23 +39,27 @@ const TextContainer = styled.div`
   align-items: center;
   margin: 0 8px;
   gap: 10px;
+  @media (max-width: 768px) {
+   text-align: center;
+  
+  }
 `;
 
-const Text = styled.h5`
-  margin:0;
-  margin-top: 40px;
+const Text = tw.h5`
+  [margin:0]
+  [margin-top: 40px]
+
 `;
-const Text2 = styled.h2`
-  margin: 0;
+const Text2 = tw.h2`
+  [margin: 0]
+  lg:text-[36px]
+  text-[24px]
 `;
 const Text3 = styled.p`
   margin: 0;
 
 `;
-const iconTr = styled.div`
 
-
-`;
 
 const LowerBlock = styled.div`
   display: flex;
@@ -62,6 +69,7 @@ const LowerBlock = styled.div`
   gap:30px ;
   @media (max-width: 768px) {
     flex-direction: column;
+    margin-top: 5px;
   }
 `;
 
@@ -77,6 +85,7 @@ const SmallRectangle = styled.div`
   background: #FFF;
   padding: 8px;
   gap: 4px;
+  background: inherit;
   
   @media (max-width: 768px) {
     margin-bottom: 16px;
@@ -109,14 +118,14 @@ const ProfessionT = () => {
         </TextContainer>
       </UpperBlock>
       <LowerBlock>
-        <SmallRectangle>
+        <SmallRectangle >
           <SmallImage src={Animation1} alt="Image 1" />
           <Text>Surgeon</Text>
           <SmallText1>Briyan Nevalli</SmallText1>
           <SmallText>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</SmallText>
           <iconTr><img src={TwFbInt} /></iconTr>
         </SmallRectangle>
-        <SmallRectangle style={{ width: '424px', height: '626px', boxShadow: '0px 25px 50px 25px #F6F7FF' }} >
+        <SmallRectangle style={{ width: '424px', background: '#FFFFFF', height: '626px', boxShadow: '0px 25px 50px 25px #F6F7FF' }} >
           <SmallImage src={Animation2} alt="Image 2" />
           <Text>Dermatologist</Text>
           <SmallText1>Bella sebastian</SmallText1>
